@@ -21,7 +21,7 @@ if(isset($_POST['submitevent']))
 	       $sql="insert into event (eventname, eventvenue, eventdate) values ('$e1',$finally,$e3);";
   		$insert=$conn->query($sql);
  
-		echo	'<form action="../adminhome.php" method="POST">
+		echo	'<form action="admin.php" method="POST">
                                 <button type="submit" name="gback">Go Back</button>';
 }
 ?>
