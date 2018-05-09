@@ -9,15 +9,15 @@ include_once 'dbh.php';
                         $rows[]=$row;
                 }
 		
-		echo 'Create an event: <br>
+		echo '<h3>Create an event:</h3> <br>
 			
-			 <form action="includes/addevent.php" method="POST">
-                               <input type="text" name="e1" placeholder="Event Name"><br>
-				<select name="e2"><option value="Select a Venue" </option> ';
+			 <form action="addevent.php" method="POST">
+                              <label>Event Title:</label> <input type="text" name="e1" placeholder="Event Name"><br>
+				<label>Choose a Venue</label> <select name="e2"><option value="Select a Venue" </option> ';
                			 foreach ($rows as $row) {
-                       		 echo '<option value="' . $row['vname'] . '">"' . $row['vname'] . '"</option>';
+                       		 echo '<option value="' . $row['vname'] . '">' . $row['vname'] . '</option>';
                				 } echo '</select> <br>';
-			echo '	<input type="text" name="e3" placeholder="Event Date YYYYMMDD"><br>
+			echo '<label>Select the date of your event:</label><input type="text" name="e3" placeholder="Event Date YYYYMMDD"><br>
                                 <button type="submit" name="submitevent">Submit Event</button>
                                 </form>';
 }

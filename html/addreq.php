@@ -10,8 +10,14 @@ if(isset($_POST['submitrequest']))
         $sql="insert into request (email, name, eventtype, eventdate, message) values ('$m1','$m2','$m3','$m4','$m5');";
         $insert=$conn->query($sql);
                 
+		if($insert)
+		{
                 echo '<p>Request successfully submitted. Thanks!</p>';
-		echo	'<form action="user.html" method="POST">
+		}
+		else {
+		echo '<p>ERROR, try again<p>';
+		}
+		echo	'<form action="user.php" method="POST">
                                   <button type="submit" name="submit">Go Back</button>';
 }
 ?>

@@ -3,7 +3,7 @@
 session_start();
 
 
-if(!isset($_SESSION['sesh_username']) || $_SESSION['usertype']!='admin') {
+if(!isset($_SESSION['sesh_username']) || $_SESSION['usertype']=='user') {
 header("Location: index.php?sorrycantdo");
                                 exit();
 
@@ -131,7 +131,6 @@ header("Location: index.php?sorrycantdo");
 			
  
 
-                <a href="#menu-toggle" class="btn btn-secondary" id="menu-toggle">Toggle Menu</a>
             </div>
         </div>
         <!-- /#page-content-wrapper -->
