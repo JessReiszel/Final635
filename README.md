@@ -4,7 +4,10 @@
 New Design!
 - Redsigned the site using Bootstrap
 
-
+![alt text](pageviews/1.jpg "Login")
+![alt text](pageviews/2.jpg "Admin")
+![alt text](pageviews/3.jpg "User")
+![alt text](pageviews/4.jpg "Sample Function")
 
 ### Common Deliverables
 - Live Replications with M/S on a second VM
