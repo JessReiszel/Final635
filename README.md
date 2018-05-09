@@ -11,7 +11,7 @@ New Design!
 
 ### Common Deliverables
 - Live Replications with M/S on a second VM
-    - Achieved by creating a second AWS Ubuntu 16.04 instance and changing bind addressing to reference the master. Created a slave_user for database access
+    - Achieved by creating a second AWS Ubuntu 16.04 instance and changing bind addressing to reference the master. Created a slave_user for database access. Files can be found in the DBreplication folder.
 - Scheduled Incremental Backups (With Backup Rotation)
     - Using Percona, a full backup is taken and then incremental backups are done every hour if there are changes.
      - Files related to this are: backup-mysql (cron), backup-mysql.sh, extract-mysql.sh, prepare-mysql.sh.
