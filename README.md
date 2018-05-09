@@ -1,5 +1,10 @@
 # Final635
 
+Link to site: http://ec2-18-188-136-24.us-east-2.compute.amazonaws.com/index.php
+
+#### Users:
+- admin:amaruo pw:ampassword
+- user:guesttest pw:gpassword
 
 New Design!
 - Redsigned the site using Bootstrap
@@ -16,7 +21,7 @@ New Design!
     - Using Percona, a full backup is taken and then incremental backups are done every hour if there are changes.
      - Files related to this are: backup-mysql (cron), backup-mysql.sh, extract-mysql.sh, prepare-mysql.sh.
 - Reimplement one of your tables in Mongo (mlab or run it locally)
-    - Recreated my requests table via MLab Mongo
+    - Recreated my requests table via MLab Mongo. Check "Mongo" folder
 - Enforce the first three normal forms on your MYSQL database
     - Enforced
 - Implement one of your common queries as a stored procedure
@@ -24,4 +29,4 @@ New Design!
 - Document your database layout in UML
     - Can be checked in my DBUML.jpg file
 - All midterm deliverables are still required
-    - Yes
+    - Working
